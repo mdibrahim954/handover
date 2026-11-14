@@ -2,6 +2,7 @@
 Thumbs.db
 
 application/cache/*
+application/core/*
 !application/cache/index.html
 
 application/logs/*
@@ -35,3 +36,11 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 /logs_session/*
 /logStore/*
 /error_log
+
+# Local configuration and bundled fonts
+/application/config/
+/assets/fonts/
+/resources/
+/system/database
+/system/core
+/system/fonts

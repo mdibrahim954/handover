@@ -1,0 +1,1 @@
+{"customer_name":"MD ABDULLAH AL MAMUN","customer_phone":"01978454315","delivery_area":"Noapara (Jessore)","delivery_area_id":"768","customer_address":"test Jessore #2535","cash_collection_amount":456,"parcel_weight":500,"instruction":"ffefggg","value":456}

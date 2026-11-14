@@ -1,0 +1,1 @@
+https://openapi.redx.com.bd/v1.0.0-beta/areas?district_name=Gazipur

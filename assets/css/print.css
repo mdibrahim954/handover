@@ -1,0 +1,66 @@
+@page {
+  size: 90mm 180mm;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body {
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .print.page {
+    box-sizing: border-box;
+    padding: 5mm;
+    height: auto !important;
+    min-height: 0 !important;
+    display: block !important; /* flex + space-between needs a fixed height, not needed here */
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+
+  /* hide everything that comes after the label */
+  .print.page ~ * {
+    display: none !important;
+  }
+
+  /* .print.page {
+    box-sizing: border-box;
+    width: 90mm;
+    height: 179mm; /* 1mm less than the page to avoid overflow */
+  /*   min-height: 0;
+    padding: 3mm;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: none;
+    overflow: hidden;
+    page-break-after: avoid;
+    break-after: avoid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: arial, Verdana, sans-serif;
+    color: black;
+    font-size: 11px;
+  } */
+
+  #qrcode img,
+  #qrcode canvas {
+    height: 130px !important;
+    width: 130px !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  table,
+  tr,
+  th,
+  td {
+    font-family: arial, Verdana, sans-serif;
+    color: black;
+  }
+}
